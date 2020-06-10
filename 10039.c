@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main()
+int score_average()
 {
 	int score, sum = 0;
 
@@ -14,5 +14,10 @@ int main()
 		sum += score;
 	}
 
-	printf("%d", sum/5);
+	return sum / 5;
+}
+
+int main()
+{
+	printf("%d", score_average());
 }
