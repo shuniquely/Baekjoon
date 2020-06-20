@@ -13,21 +13,22 @@ int main()
 
 int divisor()
 {
-	int C, A, N = 1;
+	int C, SA, BA, A, N = 1;
 
 	scanf("%d", &C);
 	
-	for (int i = 1; i <= C; i++)
+	scanf("%d", &SA);
+	BA = SA;
+
+	for (int i = 1; i <= C-1; i++)
 	{
 		scanf("%d", &A);
 
-		if (i == 1 || i == C)
-		{
-			N *= A;
-		}
+		if (A < SA) SA = A;
+		if (A > BA) BA = A;
 	}
 
-	if (N == A) N *= A;
+	N = SA * BA;
 
 	return N;
 }
