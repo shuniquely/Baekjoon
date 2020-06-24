@@ -1,7 +1,16 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+int count_chess();
+
 int main()
+{
+	printf("%d", count_chess());
+
+	return 0;
+}
+
+int count_chess()
 {
 	char chess_line[8];
 	int count = 0;
@@ -26,7 +35,5 @@ int main()
 		}
 	}
 
-	printf("%d", count);
-
-	return 0;
+	return count;
 }
