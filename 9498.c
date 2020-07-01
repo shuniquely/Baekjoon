@@ -1,12 +1,20 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+char grade (int);
+
 int main()
 {
 	int score;
-	char result;
 
 	scanf("%d", &score);
+
+	printf("%c", grade(score));
+}
+
+char grade (int score)
+{
+	char result;
 
 	switch (score/10)
 	{
@@ -28,5 +36,5 @@ int main()
 		break;
 	}
 
-	printf("%c", result);
+	return result;
 }
