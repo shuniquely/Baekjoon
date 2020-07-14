@@ -17,11 +17,11 @@ int main()
 
 void Sequence(int N, int M, int ind, int *outList)
 {
-    if(M = 0)
+    if(M == 0)
     {
-        for(int i = 0; i < ind; i++)
+        for(int i = 0;i < ind; i++)
         {
-            printf("%d", outList[i]);
+            printf("%d ", outList[i]);
         }
         printf("\n");
         return;
