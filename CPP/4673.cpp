@@ -24,7 +24,7 @@ int main()
 void SelfNum(int arr[], int len)
 {
 	int N = 1, result = 0;
-	while (result < len)
+	while (N < len)
 	{
 		result = N;
 		int index_arr[5] = {};
