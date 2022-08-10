@@ -18,6 +18,8 @@ int main()
 	{
 		if (arr[i] == 0) cout << i + 1 << "\n";
 	}
+
+	free(arr);
 }
 
 // PrintSelfNum은 입력받은 배열에 셀프넘버가 아닌 수의 인덱스의 값을 1로 바꿔준다.
@@ -42,7 +44,7 @@ void SelfNum(int arr[], int len)
 			result += index_arr[j];
 		}
 
-		if (result - 1 <= len)
+		if (result - 1 < len)
 		{
 			arr[result - 1] = 1;
 		}
