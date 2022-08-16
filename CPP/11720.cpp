@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
@@ -15,7 +14,7 @@ int main()
 
 	for (int i = 0; i < N; i++)
 	{
-		int ctoi = (int)arr[i] - 48;
+		int ctoi = arr[i] - '0';
 		result += ctoi;
 	}
 
